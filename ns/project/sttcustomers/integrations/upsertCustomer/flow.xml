@@ -2115,6 +2115,15 @@
 
 <MAPCOPY FROM="/selectCustomerByCRMIdOutput;2;0/results;2;1/id;1;0" TO="/customer;4;0;project.sttcustomers.documenttypes:Customer/id;1;0">
 </MAPCOPY>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/action;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">update</value>
+</Values>
+</DATA>
+</MAPSET>
 </MAP>
 
 <INVOKE NAME="Invoke predefined:com.wm.adapter.wmjdbc.JDBCAdapter" TIMEOUT="" SERVICE="project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:updateCustomerByCRMId" VALIDATE-IN="" VALIDATE-OUT="">

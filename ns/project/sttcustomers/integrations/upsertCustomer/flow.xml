@@ -1514,6 +1514,15 @@
 
 <MAPCOPY FROM="/sqlLastUpdateDateTime;1;0" TO="/insertCustomerInput;2;0/last_updated_at;1;0">
 </MAPCOPY>
+
+<MAPCOPY FROM="/customer;4;0;project.sttcustomers.documenttypes:Customer/isActive;1;0" TO="/insertCustomerInput;2;0/is_active;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/customer;4;0;project.sttcustomers.documenttypes:Customer/industry;1;0" TO="/insertCustomerInput;2;0/industry;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/customer;4;0;project.sttcustomers.documenttypes:Customer/rating;1;0" TO="/insertCustomerInput;2;0/rating;1;0">
+</MAPCOPY>
 </MAP>
 
 <MAP MODE="OUTPUT">
@@ -2650,6 +2659,12 @@
 
 <MAPCOPY FROM="/customer;4;0;project.sttcustomers.documenttypes:Customer/id;1;0" TO="/updateCustomerByCRMIdInput;2;0/id;1;0">
 </MAPCOPY>
+
+<MAPCOPY FROM="/customer;4;0;project.sttcustomers.documenttypes:Customer/rating;1;0" TO="/updateCustomerByCRMIdInput;2;0/rating;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/customer;4;0;project.sttcustomers.documenttypes:Customer/industry;1;0" TO="/updateCustomerByCRMIdInput;2;0/industry;1;0">
+</MAPCOPY>
 </MAP>
 
 <MAP MODE="OUTPUT">
@@ -2729,6 +2744,28 @@
             <value name="node_type">unknown</value>
             <value name="node_subtype">unknown</value>
             <value name="is_public">false</value>
+            <value name="field_name">industry</value>
+            <value name="field_type">string</value>
+            <value name="field_dim">0</value>
+            <value name="nillable">true</value>
+            <value name="form_qualified">false</value>
+            <value name="is_global">false</value>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">unknown</value>
+            <value name="node_subtype">unknown</value>
+            <value name="is_public">false</value>
+            <value name="field_name">rating</value>
+            <value name="field_type">string</value>
+            <value name="field_dim">0</value>
+            <value name="nillable">true</value>
+            <value name="form_qualified">false</value>
+            <value name="is_global">false</value>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">unknown</value>
+            <value name="node_subtype">unknown</value>
+            <value name="is_public">false</value>
             <value name="field_name">crm_id</value>
             <value name="field_type">string</value>
             <value name="field_dim">0</value>
@@ -2798,7 +2835,40 @@
             <value name="node_type">unknown</value>
             <value name="node_subtype">unknown</value>
             <value name="is_public">false</value>
+            <value name="field_name">is_active</value>
+            <value name="field_type">string</value>
+            <value name="field_dim">0</value>
+            <value name="nillable">true</value>
+            <value name="form_qualified">false</value>
+            <value name="is_global">false</value>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">unknown</value>
+            <value name="node_subtype">unknown</value>
+            <value name="is_public">false</value>
             <value name="field_name">name</value>
+            <value name="field_type">string</value>
+            <value name="field_dim">0</value>
+            <value name="nillable">true</value>
+            <value name="form_qualified">false</value>
+            <value name="is_global">false</value>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">unknown</value>
+            <value name="node_subtype">unknown</value>
+            <value name="is_public">false</value>
+            <value name="field_name">industry</value>
+            <value name="field_type">string</value>
+            <value name="field_dim">0</value>
+            <value name="nillable">true</value>
+            <value name="form_qualified">false</value>
+            <value name="is_global">false</value>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">unknown</value>
+            <value name="node_subtype">unknown</value>
+            <value name="is_public">false</value>
+            <value name="field_name">rating</value>
             <value name="field_type">string</value>
             <value name="field_dim">0</value>
             <value name="nillable">true</value>

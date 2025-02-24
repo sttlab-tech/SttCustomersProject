@@ -101,7 +101,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">stephane.tailland@ibm.com</value>
-    <value name="lastModifiedDate">1740401176991</value>
+    <value name="lastModifiedDate">1740401567599</value>
     <value name="displayName">upsertCustomer</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -165,6 +165,47 @@
         <value name="nodePathForDebug">0</value>
       </record>
       <record name="/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Date</value>
+          <value name="groupName">date</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">dateTimeFormat</value>
+          <value name="serviceName">pub.date:dateTimeFormat</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <number name="ui_step_index" type="Long">2</number>
+        <value name="nodePathNew">1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">2</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
+      </record>
+      <record name="/2" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Flow</value>
+          <value name="groupName">flow</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">debugLog</value>
+          <value name="serviceName">pub.flow:debugLog</value>
+          <value name="transformerSupport">false</value>
+        </record>
+        <number name="ui_step_index" type="Long">3</number>
+        <value name="nodePathNew">2</value>
+        <number name="nodeIndex" type="Long">2</number>
+        <number name="lineNumberForDebug" type="Long">3</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
+      </record>
+      <record name="/3" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">IF</value>
         <record name="config" javaclass="com.wm.util.Values">
@@ -182,7 +223,7 @@
         <number name="lineNumberForDebug" type="Long">2</number>
         <value name="nodePathForDebug">1</value>
       </record>
-      <record name="/1/0" javaclass="com.wm.util.Values">
+      <record name="/3/0" javaclass="com.wm.util.Values">
         <value name="name">IF</value>
         <value name="itemType">CONTROLS</value>
         <value name="nodePathNew">1.0</value>
@@ -190,7 +231,7 @@
         <number name="lineNumberForDebug" type="Long">2</number>
         <value name="nodePathForDebug">1.0</value>
       </record>
-      <record name="/1/0/0" javaclass="com.wm.util.Values">
+      <record name="/3/0/0" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">TRANSFORM</value>
         <number name="ui_step_index" type="Long">3</number>
@@ -209,7 +250,7 @@
         </array>
         <value name="nodePathForDebug">1.0.0</value>
       </record>
-      <record name="/1/0/0/0" javaclass="com.wm.util.Values">
+      <record name="/3/0/0/0" javaclass="com.wm.util.Values">
         <value name="itemType">SERVICES</value>
         <Boolean name="serviceReferenceResolved">true</Boolean>
         <record name="serviceName" javaclass="com.wm.util.Values">
@@ -218,7 +259,7 @@
           <value name="transformerSupport">true</value>
         </record>
       </record>
-      <record name="/1/0/0/1" javaclass="com.wm.util.Values">
+      <record name="/3/0/0/1" javaclass="com.wm.util.Values">
         <value name="itemType">SERVICES</value>
         <Boolean name="serviceReferenceResolved">true</Boolean>
         <record name="serviceName" javaclass="com.wm.util.Values">
@@ -233,7 +274,7 @@
         <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
         </array>
       </record>
-      <record name="/1/0/0/2" javaclass="com.wm.util.Values">
+      <record name="/3/0/0/2" javaclass="com.wm.util.Values">
         <value name="itemType">SERVICES</value>
         <Boolean name="serviceReferenceResolved">true</Boolean>
         <record name="serviceName" javaclass="com.wm.util.Values">
@@ -248,8 +289,8 @@
         <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
         </array>
       </record>
-      <null name="/1/0/0/3"/>
-      <record name="/1/0/1" javaclass="com.wm.util.Values">
+      <null name="/3/0/0/3"/>
+      <record name="/3/0/1" javaclass="com.wm.util.Values">
         <value name="itemType">APPS</value>
         <value name="id">com.wm.adapter.wmjdbc.JDBCAdapter</value>
         <value name="name">Database</value>
@@ -302,7 +343,7 @@
         <null name="outputMapSet"/>
         <value name="nodePathForDebug">1.0.1</value>
       </record>
-      <record name="/1/1" javaclass="com.wm.util.Values">
+      <record name="/3/1" javaclass="com.wm.util.Values">
         <value name="name">ELSE</value>
         <value name="itemType">CONTROLS</value>
         <value name="nodePathNew">2.0</value>
@@ -310,7 +351,7 @@
         <number name="lineNumberForDebug" type="Long">5</number>
         <value name="nodePathForDebug">1.1</value>
       </record>
-      <record name="/1/1/0" javaclass="com.wm.util.Values">
+      <record name="/3/1/0" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">TRANSFORM</value>
         <number name="ui_step_index" type="Long">6</number>
@@ -329,7 +370,7 @@
         </array>
         <value name="nodePathForDebug">1.1.0</value>
       </record>
-      <record name="/1/1/0/0" javaclass="com.wm.util.Values">
+      <record name="/3/1/0/0" javaclass="com.wm.util.Values">
         <value name="itemType">SERVICES</value>
         <Boolean name="serviceReferenceResolved">true</Boolean>
         <record name="serviceName" javaclass="com.wm.util.Values">
@@ -344,7 +385,7 @@
         <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
         </array>
       </record>
-      <record name="/1/1/0/1" javaclass="com.wm.util.Values">
+      <record name="/3/1/0/1" javaclass="com.wm.util.Values">
         <value name="itemType">SERVICES</value>
         <Boolean name="serviceReferenceResolved">true</Boolean>
         <record name="serviceName" javaclass="com.wm.util.Values">
@@ -359,8 +400,8 @@
         <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
         </array>
       </record>
-      <null name="/1/1/0/2"/>
-      <record name="/1/1/1" javaclass="com.wm.util.Values">
+      <null name="/3/1/0/2"/>
+      <record name="/3/1/1" javaclass="com.wm.util.Values">
         <value name="itemType">APPS</value>
         <value name="id">com.wm.adapter.wmjdbc.JDBCAdapter</value>
         <value name="name">Database</value>

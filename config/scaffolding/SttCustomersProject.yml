@@ -11,7 +11,11 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 services:
-- serviceName: project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:db_azuresql_dada_edge
+- serviceName: project.sttcustomers.integrations:upsertCustomer
+  packages:
+  - name: SttCustomersProject
+    version: "1.0"
+- serviceName: project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:selectCustomerByCRMId
   packages:
   - name: SttCustomersProject
     version: "1.0"

@@ -11,15 +11,7 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 services:
-- serviceName: project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:db_azuresql_dada_crt
-  packages:
-  - name: SttCustomersProject
-    version: "1.0"
-- serviceName: project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:db_azuresql_dada_edge
-  packages:
-  - name: SttCustomersProject
-    version: "1.0"
-- serviceName: project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:insertCustomer
+- serviceName: project.sttcustomers.integrations:upsertCustomer
   packages:
   - name: SttCustomersProject
     version: "1.0"
@@ -27,18 +19,18 @@ services:
   packages:
   - name: SttCustomersProject
     version: "1.0"
-- serviceName: project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:updateCustomerByCRMId
-  packages:
-  - name: SttCustomersProject
-    version: "1.0"
-- serviceName: project.sttcustomers.integrations:upsertCustomer
-  packages:
-  - name: SttCustomersProject
-    version: "1.0"
 - serviceName: pub.date:dateTimeFormat
   packages:
   - name: WmPublic
     version: 11.1.0.0.1
+- serviceName: project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:insertCustomer
+  packages:
+  - name: SttCustomersProject
+    version: "1.0"
+- serviceName: project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:updateCustomerByCRMId
+  packages:
+  - name: SttCustomersProject
+    version: "1.0"
 configurationVariables:
   ? artConnection.SttCustomersProject.project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada_edge.connectionManagerSettings.startupBackoffSecs
   : "10"
@@ -103,7 +95,7 @@ configurationVariables:
   ? artConnection.SttCustomersProject.project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada_crt.connectionSettings.driverType
   : Progress® DataDirect®
   ? artConnection.SttCustomersProject.project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada_crt.connectionEnabled
-  : "false"
+  : "true"
   ? artConnection.SttCustomersProject.project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada_edge.connectionSettings.keyStore
   : ""
   ? artConnection.SttCustomersProject.project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada_crt.connectionSettings.portNumber

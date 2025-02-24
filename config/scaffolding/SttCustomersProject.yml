@@ -19,6 +19,14 @@ services:
   packages:
   - name: SttCustomersProject
     version: "1.0"
+- serviceName: project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:insertCustomer
+  packages:
+  - name: SttCustomersProject
+    version: "1.0"
+- serviceName: project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:updateCustomerByCRMId
+  packages:
+  - name: SttCustomersProject
+    version: "1.0"
 configurationVariables:
   ? artConnection.SttCustomersProject.project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.db_azuresql_dada_edge.connectionManagerSettings.startupBackoffSecs
   : "10"

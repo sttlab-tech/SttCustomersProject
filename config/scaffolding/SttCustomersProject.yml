@@ -19,6 +19,10 @@ services:
   packages:
   - name: SttCustomersProject
     version: "1.0"
+- serviceName: pub.date:dateTimeFormat
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
 - serviceName: project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:insertCustomer
   packages:
   - name: SttCustomersProject

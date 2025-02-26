@@ -2870,10 +2870,10 @@
 <MAPCOPY FROM="/customer;4;0;project.sttcustomers.documenttypes:Customer/crmId;1;0" TO="/updateCustomerByCRMIdInput;2;0/crm_id_in;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/customer;4;0;project.sttcustomers.documenttypes:Customer/creationDateTime;1;0" TO="/updateCustomerByCRMIdInput;2;0/created_at;1;0">
+<MAPCOPY FROM="/sqlCreationDateTime;1;0" TO="/updateCustomerByCRMIdInput;2;0/created_at;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/customer;4;0;project.sttcustomers.documenttypes:Customer/lastUpdateDateTime;1;0" TO="/updateCustomerByCRMIdInput;2;0/last_updated_at;1;0">
+<MAPCOPY FROM="/sqlLastUpdateDateTime;1;0" TO="/updateCustomerByCRMIdInput;2;0/last_updated_at;1;0">
 </MAPCOPY>
 
 <MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/$connectionName;1;0">

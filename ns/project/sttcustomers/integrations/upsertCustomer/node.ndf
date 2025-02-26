@@ -101,7 +101,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">stephane.tailland@ibm.com</value>
-    <value name="lastModifiedDate">1740573134309</value>
+    <value name="lastModifiedDate">1740575043675</value>
     <value name="displayName">upsertCustomer</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">

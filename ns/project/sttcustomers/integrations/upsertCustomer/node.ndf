@@ -101,7 +101,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">stephane.tailland@ibm.com</value>
-    <value name="lastModifiedDate">1740404192192</value>
+    <value name="lastModifiedDate">1740573134309</value>
     <value name="displayName">upsertCustomer</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -140,11 +140,11 @@
         <number name="lineNumberForDebug" type="Long">1</number>
         <record name="connection" javaclass="com.wm.util.Values">
           <value name="connectionName">db_azuresql_dada_edge</value>
-          <value name="connectionType">sagcloud</value>
+          <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
           <null name="description"/>
         </record>
         <value name="connectionNSName">project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:db_azuresql_dada_edge</value>
-        <value name="connectionType">sagcloud</value>
+        <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
         <Boolean name="accountReferenceResolved">true</Boolean>
         <Boolean name="serviceReferenceResolved">true</Boolean>
         <array name="map" type="object" depth="1" javaclass="java.lang.Object">
@@ -162,6 +162,7 @@
         </array>
         <number name="ui_step_index" type="Long">1</number>
         <null name="outputMapSet"/>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
         <value name="nodePathForDebug">0</value>
       </record>
       <record name="/1" javaclass="com.wm.util.Values">
@@ -292,11 +293,11 @@
         <value name="version">1.0</value>
         <record name="connection" javaclass="com.wm.util.Values">
           <value name="connectionName">db_azuresql_dada_edge</value>
-          <value name="connectionType">sagcloud</value>
+          <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
           <null name="description"/>
         </record>
         <value name="connectionNSName">project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:db_azuresql_dada_edge</value>
-        <value name="connectionType">sagcloud</value>
+        <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
         <Boolean name="accountReferenceResolved">true</Boolean>
         <Boolean name="serviceReferenceResolved">true</Boolean>
         <array name="map" type="object" depth="1" javaclass="java.lang.Object">
@@ -374,11 +375,11 @@
         <value name="version">1.0</value>
         <record name="connection" javaclass="com.wm.util.Values">
           <value name="connectionName">db_azuresql_dada_edge</value>
-          <value name="connectionType">sagcloud</value>
+          <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
           <null name="description"/>
         </record>
         <value name="connectionNSName">project.sttcustomers.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:db_azuresql_dada_edge</value>
-        <value name="connectionType">sagcloud</value>
+        <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
         <Boolean name="accountReferenceResolved">true</Boolean>
         <Boolean name="serviceReferenceResolved">true</Boolean>
         <array name="map" type="object" depth="1" javaclass="java.lang.Object">

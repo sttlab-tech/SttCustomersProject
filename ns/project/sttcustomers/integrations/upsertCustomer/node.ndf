@@ -101,7 +101,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">stephane.tailland@ibm.com</value>
-    <value name="lastModifiedDate">1740575536978</value>
+    <value name="lastModifiedDate">1740576647835</value>
     <value name="displayName">upsertCustomer</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -319,6 +319,7 @@
         <number name="lineNumberForDebug" type="Long">6</number>
         <null name="outputMapSet"/>
         <value name="nodePathForDebug">3.0.1</value>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
       </record>
       <record name="/3/1" javaclass="com.wm.util.Values">
         <value name="name">ELSE</value>
@@ -401,6 +402,7 @@
         <number name="lineNumberForDebug" type="Long">9</number>
         <null name="outputMapSet"/>
         <value name="nodePathForDebug">3.1.1</value>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
       </record>
       <record name="/4" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
